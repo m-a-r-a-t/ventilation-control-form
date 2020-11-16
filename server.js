@@ -14,7 +14,7 @@ app.use(function (req, res, next) {
   next()
 })
 
-const htmlRender = (fileName, res) => {
+const htmlRender = (fileName) => {
   fs.readFile(path.join(__dirname, 'public', fileName), (err, data) => {
     if (err) throw err
 
@@ -25,13 +25,13 @@ const htmlRender = (fileName, res) => {
 app.get('/favicon.ico', (req, res) => res.sendStatus(200))
 
 app.get('/', (req, res) => {
-  htmlRender('index.html', res)
+  htmlRender('index.html',res)
 })
 
 app.post('/', urlencodedParser, (req, res) => {
   if (!req.body) return res.sendStatus(400)
   console.log(req.body)
-  htmlRender('sucsess.html', res)
+  htmlRender('sucsess.html',res)
 })
 
 http.listen(PORT, () => console.log(`Server started on port : ${PORT}`))
