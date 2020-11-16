@@ -1,0 +1,22 @@
+{
+  "name": "ventilation-control-calculator",
+  "version": "1.0.0",
+  "description": "form",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/m-a-r-a-t/ventilation-control-form.git"
+  },
+  "keywords": [
+    "js"
+  ],
+  "author": "Marat Sabitov <sabitov.marat01@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/m-a-r-a-t/ventilation-control-form/issues"
+  },
+  "homepage": "https://github.com/m-a-r-a-t/ventilation-control-form#readme"
+}
