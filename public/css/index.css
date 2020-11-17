@@ -1,0 +1,73 @@
+.form {
+  display: flex;
+  justify-content: center;
+
+}
+
+.form-radio label {
+  color: red;
+  text-align: center;
+}
+
+.params {
+  display: flex;
+  margin-bottom: .5rem;
+}
+
+.params label {
+  text-align: left;
+  color: rgb(78, 78, 177);
+  width: 5.5rem;
+  display: flex;
+  align-items: center;
+}
+
+
+.inputs {
+  text-align: center;
+  font-weight: 900;
+  width: 2rem;
+  height: 1.5rem;
+  margin-right: 3px;
+}
+
+.small-params div {
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.btn {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+@media only screen and (max-device-width: 480px) {
+  .form-radio label {
+    text-align: center;
+    margin-right: 20px;
+  }
+
+  .small-params div {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .params {
+    padding: 0 2rem;
+    display: flex;
+    margin-bottom: .5rem;
+  }
+
+  .params label {
+    display: flex;
+    text-align: left;
+    color: rgb(78, 78, 177);
+    width: 6rem;
+    align-items: center;
+  }
+
+}
