@@ -1,0 +1,155 @@
+<div class="form">
+  <form method="POST" action="/form">
+    <div class="form-radio">
+      <label>
+        <h2>Заслонка</h2>
+      </label>
+      <div class="params">
+        <label name="zaslonka">Управление</label>
+        <div class="small-params">
+          <div><input name="zaslonka_upravlenie" type="radio" value="Дискретное">
+            <div> Дискретное</div>
+          </div>
+          <div><input name="zaslonka_upravlenie" type="radio" value="Aналоговое">
+            <div> Aналоговое</div>
+          </div>
+        </div>
+      </div>
+      <div class="params">
+        <label>Контроль открытия</label>
+        <div class="small-params">
+          <div><input name="control" type="radio" value="Нет">
+            <div> Нет</div>
+          </div>
+          <div> <input name="control" type="radio" value="Есть">
+            <div> Есть</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-radio">
+      <label>
+        <h2>Фильтра</h2>
+      </label>
+      <div class="params">
+        <label>Количество</label>
+        <div class="small-params">
+          <div><input name="kolvo" class="inputs" type="input">
+            шт
+          </div>
+        </div>
+      </div>
+      <div class="params">
+        <label>Сигналы</label>
+        <div class="small-params">
+          <div><input name="signals" type="radio" value="Разделены">
+            <div> Разделены</div>
+          </div>
+          <div> <input name="signals" type="radio" value="Объединены">
+            <div> Объединены</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-radio">
+      <label>
+        <h2>Нагреватель</h2>
+      </label>
+      <div class="params">
+        <label>Тип</label>
+        <div class="small-params">
+          <div><input name="nagrevatel_type" type="radio" value="Водяной">
+            <div> Водяной</div>
+          </div>
+          <div> <input name="nagrevatel_type" type="radio" value="Электрический">
+            <div> Электрическийv</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-radio">
+        <label>
+          <h2>Охладитель</h2>
+        </label>
+        <div class="params">
+          <label>Тип</label>
+          <div class="small-params">
+            <div><input name="ohladitel_type" type="radio" value="Нет">
+              <div>Нет</div>
+            </div>
+            <div> <input name="ohladitel_type" type="radio" value="Водяной">
+              <div>Водяной</div>
+            </div>
+            <div><input name="ohladitel_type" type="radio" value="Фреоновый">
+              <div>Фреоновый</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="form-radio">
+        <label>
+          <h2>Вентилятор</h2>
+        </label>
+        <div class="params">
+          <label>Мощность</label>
+          <div class="small-params">
+            <div><input name="mochnost" class="inputs" type="input">
+              <div> кВт</div>
+            </div>
+          </div>
+        </div>
+        <div class="params">
+          <label>Управление</label>
+          <div class="small-params">
+            <div><input name="vent_upravlenie" type="radio" value="Прямой пуск">
+              <div> Прямой пуск</div>
+            </div>
+            <div> <input name="vent_upravlenie" type="radio" value="Преобразователь частоты">
+              <div>Преобразователь частоты</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-radio">
+        <label>
+          <h2>Общие</h2>
+        </label>
+        <div class="params">
+          <label>Корпус</label>
+          <div class="small-params">
+            <div><input name="corpus" value="Пластик" type="radio">
+              <div>Пластик</div>
+            </div>
+            <div><input name="corpus" value="Металл" type="radio">
+              <div>Металл</div>
+            </div>
+          </div>
+        </div>
+        <div class="params">
+          <label>Доп. опции</label>
+          <div class="small-params">
+            <div> <input name="dop_options" type="checkbox" value="Сигнал Пожар">
+              <div>Сигнал Пожар</div>
+            </div>
+            <div> <input name="dop_options" type="checkbox" value="LED-индикация">
+              <div>LED-индикация</div>
+            </div>
+            <div> <input name="dop_options" type="checkbox" value="Диспетчеризация">
+              <div>Диспетчеризация</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="btn">
+        <button type="submit">
+          Отправить</button>
+      </div>
+  </form>
+</div>
